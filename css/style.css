@@ -391,3 +391,57 @@ section div img{
   transform: rotateY(180deg);
 }
 
+/**PRODUCTOS**/
+.productos2 h2{
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+
+
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(215, 255, 215);
+}
+
+.productos img{
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+
+.productos h3{
+  background-color: white;
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.productos a{
+  background-color: burlywood;
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: Arial, Helvetica, sans-serif;
+}
+
+.productos div{
+    border: 3px solid black;
+    text-align: center;
+    margin: 20px;
+    box-shadow: white;
+    transition: 2s;
+}
+.productos div:hover{
+    transform: scale(1.15);
+}
