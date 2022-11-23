@@ -236,12 +236,13 @@ footer div p {
   grid-auto-rows: 250px;
   gap: 15px;
   justify-items: center;
+  background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(9, 121, 54, 1) 5%,
-    rgba(8, 135, 54, 1) 19%,
-    rgba(201, 178, 42, 0.950315160243785) 55%
+    rgba(53, 212, 117, 1) 0%,
+    rgba(8, 135, 54, 1) 25%,
+    rgba(42, 201, 44, 0.9082983535210959) 73%
   );
 }
 
@@ -268,22 +269,19 @@ footer div p {
   }
 }
 
-
-
-@media screen and (max-width: 1330px) {
+@media only screen and (max-width: 1330px) {
   header {
     display: flex;
     flex-direction: column;
     height: auto;
   }
-  header a{
+  header a {
     display: flex;
     justify-items: center;
   }
-  header nav ul{
+  header nav ul {
     display: flex;
   }
-
 }
 @media screen and (max-width: 1085px) {
   .grid-contenedor {
@@ -303,15 +301,14 @@ footer div p {
   header nav ul {
     flex-direction: column;
   }
-
 }
 
 /*PAGINA HISTORIA*/
 
-
 .historia h2 {
   font-size: 100px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   color: rgba(44, 162, 44, 0.962);
 }
@@ -321,16 +318,14 @@ footer div p {
   height: 400px;
 }
 
-.historia p{
+.historia p {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
-
 
 .tribunas div {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row: auto;
   gap: 15px;
 }
@@ -338,4 +333,61 @@ footer div p {
 /*PAGINA PLANTEL*/
 
 
+.plantel {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 212, 117, 1) 0%,
+    rgba(8, 135, 54, 1) 25%,
+    rgba(42, 201, 44, 0.9082983535210959) 73%
+  );
+}
+
+.arqueros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 100px;
+  margin-bottom: 40px;
+  }
+
+.defensores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.mediocampistas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.delanteros {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  justify-items: center;
+  row-gap: 20px;
+}
+
+section div img{
+  width: 300px;
+  height: 300px;
+}
+
+.terotero {
+  transition: 3s;
+}
+.terotero:hover {
+  transform: rotateY(180deg);
+}
 
