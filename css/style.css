@@ -317,10 +317,10 @@ section div img {
   height: 300px;
 }
 
-.terotero {
+.jugador {
   transition: 3s;
 }
-.terotero:hover {
+.jugador:hover {
   transform: rotateY(180deg);
 }
 
@@ -376,6 +376,33 @@ section div img {
 .productos div:hover {
   transform: scale(1.15);
 }
+
+/**CONTACTO**/
+
+.contacto{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.contacto h2{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.contacto input{
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.pais{
+  font-size: 30px;
+}
+
+
+/**MEDIAS QUERY**/
 
 @media screen and (max-width: 806px) {
   header div nav ul {
@@ -466,6 +493,20 @@ section div img {
 }
 
 @media screen and (max-width:630px) {
+  .historia img{
+    width: 100%;
+  }
+  .nacimiento div img{
+    width: 100%;
+  }
+
+  .historia p{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width:630px) {
   .historia img{
     width: 100%;
   }
