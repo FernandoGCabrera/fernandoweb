@@ -30,7 +30,7 @@ header a {
   height: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 header a img {
@@ -71,8 +71,6 @@ header div h1 {
 
 header div nav ul {
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: -10px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -80,7 +78,7 @@ header div nav ul {
 }
 
 header div nav ul li {
-  margin: -10px 100px -10px 100px;
+  margin: 10px 50px -10px 50px;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -117,8 +115,14 @@ main h1 {
   align-items: center;
 }
 
+.carousel div img{
+  width: 100%;
+  height: 700px;
+}
+
 .noticias {
   width: 100%;
+  height: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -142,6 +146,10 @@ main h1 {
   height: 200px;
 }
 
+.noticias div p{
+  width: 300px;
+}
+
 main div p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
@@ -155,6 +163,7 @@ main div p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  
 }
 
 .flex.noticias2 {
@@ -224,84 +233,6 @@ footer div p {
   text-align: center;
 }
 
-.grid-contenedor div img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.grid-contenedor {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 250px;
-  gap: 15px;
-  justify-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(53, 212, 117, 1) 0%,
-    rgba(8, 135, 54, 1) 25%,
-    rgba(42, 201, 44, 0.9082983535210959) 73%
-  );
-}
-
-.grid-items1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
-.grid-items10 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.grid-items11 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-/*--Medias Query--*/
-
-@media screen and (max-width: 1085px) {
-  .grid-contenedor {
-    display: grid;
-  }
-}
-
-@media only screen and (max-width: 1330px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  header a {
-    display: flex;
-    justify-items: center;
-  }
-  header nav ul {
-    display: flex;
-  }
-}
-@media screen and (max-width: 1085px) {
-  .grid-contenedor {
-    /**REPEAT*/
-    grid-template-columns: 1fr;
-  }
-  .grid-items {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  header {
-    height: auto;
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-}
 
 /*PAGINA HISTORIA*/
 
@@ -313,9 +244,9 @@ footer div p {
   color: rgba(44, 162, 44, 0.962);
 }
 
-.historia .florencio img{
-  width: 940px;
-  height: 600px;
+.historia .florencio img {
+  width: 600px;
+  height: 450px;
 }
 
 .historia img {
@@ -336,9 +267,7 @@ footer div p {
   border: 3px solid green;
 }
 
-
 /*PAGINA PLANTEL*/
-
 
 .plantel {
   background: rgb(2, 0, 36);
@@ -357,7 +286,7 @@ footer div p {
   justify-items: center;
   row-gap: 100px;
   margin-bottom: 40px;
-  }
+}
 
 .defensores {
   display: grid;
@@ -378,7 +307,6 @@ footer div p {
 }
 
 .delanteros {
-  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
@@ -386,7 +314,7 @@ footer div p {
   row-gap: 20px;
 }
 
-section div img{
+section div img {
   width: 300px;
   height: 300px;
 }
@@ -399,7 +327,7 @@ section div img{
 }
 
 /**PRODUCTOS**/
-.productos2 h2{
+.productos2 h2 {
   background-color: green;
   color: white;
   text-align: center;
@@ -408,8 +336,6 @@ section div img{
   font-style: oblique;
 }
 
-
-
 .productos {
   display: flex;
   justify-content: space-around;
@@ -417,38 +343,140 @@ section div img{
   background-color: rgb(215, 255, 215);
 }
 
-.productos img{
+.productos img {
   width: 400px;
   height: 500px;
   background-color: white;
   border: 3px solid black;
 }
 
-
-.productos h3{
+.productos h3 {
   background-color: white;
   color: green;
   text-align: center;
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
 }
-.productos a{
+.productos a {
   background-color: burlywood;
   color: green;
   text-align: center;
   font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: Arial, Helvetica, sans-serif;
 }
 
-.productos div{
-    border: 3px solid black;
-    text-align: center;
-    margin: 20px;
-    box-shadow: white;
-    transition: 2s;
+.productos div {
+  border: 3px solid black;
+  text-align: center;
+  margin: 20px;
+  box-shadow: white;
+  transition: 2s;
 }
-.productos div:hover{
-    transform: scale(1.15);
+.productos div:hover {
+  transform: scale(1.15);
 }
+
+@media screen and (max-width: 806px) {
+  header div nav ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  header {
+    padding: 0px; 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  header div h1{
+    margin-top: 50px;
+  }
+  .hero {
+    display: none;
+  }
+}
+
+@media screen and  (max-width:676px ){
+  .contenedor-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer ul li a{
+    margin: 0px;
+  }
+  footer .contenedor-padre .redessociales{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  .noticias{
+    height: 1200px;
+    margin-bottom: 50px;
+  } 
+}
+
+@media screen and (max-width:700px) {
+  .noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 680px;
+    
+  } 
+  .flex-noticias4{
+    margin-top: 110px;
+    margin-bottom: 600px;
+  }
+}
+
+@media screen and (max-width:346px) {
+  .noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+@media screen and (max-width:1420px){
+ .tribunas div{
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+ .tribunas img{
+  width: 100%;
+ } 
+}
+
+@media screen and (max-width:630px) {
+  .florencio{
+    width: 100%;
+  }
+  .nacimiento div img{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width:400px) {
+  }
+  
