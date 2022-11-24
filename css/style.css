@@ -244,15 +244,13 @@ footer div p {
   color: rgba(44, 162, 44, 0.962);
 }
 
-.historia .florencio img {
-  width: 600px;
-  height: 450px;
-}
+
 
 .historia img {
-  width: 550px;
-  height: 400px;
+  width: 100%;
+  height: 700px;
 }
+
 
 .historia p {
   font-size: 20px;
@@ -468,15 +466,17 @@ section div img {
 }
 
 @media screen and (max-width:630px) {
-  .florencio{
+  .historia img{
     width: 100%;
   }
   .nacimiento div img{
     width: 100%;
   }
+
+  .historia p{
+    width: 100%;
+  }
   
 }
 
-@media screen and (min-width:400px) {
-  }
-  
+
