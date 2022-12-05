@@ -1,0 +1,43 @@
+footer {
+  border: 3px solid rgb(58, 173, 54);
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  .contenedor-padre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          color: green;
+          margin-left: 150px;
+        }
+      }
+    }
+    .redes-sociales {
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+      }
+    }
+  }
+  div {
+    p {
+      color: green;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
