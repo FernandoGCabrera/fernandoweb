@@ -1,0 +1,33 @@
+//**listas**//
+
+$colores: rgb(81, 177, 33), rgb(249, 121, 47);
+
+//**MIXINS**//
+
+@mixin flex($flex, $direction, $justify, $align) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//**MAPAS**/
+
+$button: (
+  fondo-boton: burlywood,
+  bordes-boton: 2px solid orange,
+  color-texto: nth($colores, 1),
+);
+
+$cajas: (
+  border-boton: 3px solid black,
+  margin-boton: 20px,
+  shadow-boton: white,
+);
+
+//**EXTENDS**//
+
+%flex {
+  display: flex;
+  justify-items: center;
+}

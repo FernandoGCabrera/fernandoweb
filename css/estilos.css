@@ -12,7 +12,7 @@ header {
   flex-wrap: nowrap; }
   header a {
     text-decoration: none;
-    color: green;
+    color: #51b121;
     width: 100px;
     height: 50px;
     display: flex;
@@ -23,7 +23,7 @@ header {
       height: 100px; }
   header div {
     width: 100%;
-    color: green;
+    color: #51b121;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ header {
     header div h1 {
       width: 100%;
       margin: 0px 20px 0px 20px;
-      color: green;
+      color: #51b121;
       font-size: 50px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       display: flex;
@@ -56,3 +56,333 @@ header {
         margin: 10px 50px -10px 50px;
         font-size: 20px;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+main .hero {
+  width: 100%;
+  height: 1200px;
+  background-image: url("../../img/Estadio Florencio Sola.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+main .carousel div img {
+  width: 100%;
+  height: 1000px; }
+
+main h1 {
+  color: orange;
+  background-color: green;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+main .noticias {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  main .noticias div {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  main .noticias h2 {
+    color: #51b121;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+  main .noticias .imagen {
+    height: 300px;
+    width: 400px; }
+  main .noticias p {
+    width: 300px; }
+
+.historia .nacimiento h2 {
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #51b121; }
+
+.historia .nacimiento img {
+  width: 100%;
+  height: 700px; }
+
+.historia .nacimiento p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.historia .tribunas div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  gap: 15px;
+  border: 3px solid green; }
+
+.plantel {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #35d475 0%, #088736 25%, rgba(42, 201, 44, 0.908298) 73%); }
+  .plantel .arqueros {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 100px;
+    margin-bottom: 40px; }
+  .plantel .defensores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+    margin-bottom: 40px; }
+  .plantel .mediocampistas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 20px;
+    margin-bottom: 40px; }
+  .plantel .delanteros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+    row-gap: 20px; }
+  .plantel div img {
+    width: 300px;
+    height: 300px; }
+  .plantel .jugador {
+    transition: 3s; }
+    .plantel .jugador:hover {
+      transform: rotateY(180deg); }
+
+.productos2 h2 {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique; }
+
+.productos2 .productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #d7ffd7; }
+  .productos2 .productos img {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid black; }
+  .productos2 .productos h3 {
+    background-color: white;
+    color: #51b121;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic; }
+  .productos2 .productos a {
+    background-color: burlywood;
+    color: #51b121;
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: Arial, Helvetica, sans-serif; }
+  .productos2 .productos div {
+    border: 3px solid black;
+    margin: 20px;
+    box-shadow: white;
+    text-align: center;
+    transition: 2s; }
+    .productos2 .productos div:hover {
+      transform: scale(1.15); }
+
+.contacto {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: normal; }
+  .contacto h2 {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: normal; }
+  .contacto input {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: normal; }
+  .contacto .pais {
+    font-size: 30px; }
+
+footer {
+  border: 3px solid #3aad36;
+  background-color: orange;
+  display: flex;
+  flex-direction: column; }
+  footer .contenedor-padre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .contenedor-padre a img {
+      width: 100px;
+      height: 100px; }
+    footer .contenedor-padre ul {
+      list-style: none; }
+      footer .contenedor-padre ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #51b121;
+        margin-left: 150px; }
+    footer .contenedor-padre .redes-sociales img {
+      width: 50px;
+      height: 50px;
+      margin: 5px; }
+  footer div p {
+    color: #51b121;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+
+@media screen and (max-width: 845px) {
+  header div nav ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 1330px) {
+  header {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+  header div h1 {
+    margin-top: 50px; }
+  .hero {
+    display: none; } }
+
+@media screen and (max-width: 1000px) {
+  main .hero {
+    display: none; }
+  main .carousel {
+    display: none; } }
+
+@media screen and (max-width: 1650px) {
+  main .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto; } }
+
+@media screen and (max-width: 880px) {
+  main .noticias {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto; }
+  main .noticias .flex-noticias h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center; }
+  main .noticias .flex-noticias1 img {
+    width: 300px;
+    height: 300px; }
+  main .noticias .flex-noticias2 img {
+    width: 300px;
+    height: 300px; }
+  main .noticias .flex-noticias3 img {
+    width: 300px;
+    height: 300px; }
+  main .noticias .flex-noticias4 img {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (max-width: 1000px) {
+  .contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px; }
+  footer .contenedor-padre ul li a {
+    display: flex;
+    flex-direction: row;
+    margin: 0px; }
+  footer .contenedor-padre .redessociales {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 350px) {
+  .contenedor-padre {
+    display: flex;
+    flex-direction: column; }
+  footer .contenedor-padre ul li a {
+    display: grid;
+    grid-template-columns: 1fr; }
+  footer .contenedor-padre .redessociales {
+    display: flex;
+    flex-direction: row; }
+  footer .contenedor-padre .redessociales img {
+    width: 70px;
+    height: 80px; } }
+
+@media screen and (max-width: 1420px) {
+  .tribunas div {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .tribunas img {
+    width: 100%; } }
+
+@media screen and (max-width: 630px) {
+  .historia img {
+    width: 100%; }
+  .nacimiento div img {
+    width: 100%; }
+  .historia p {
+    width: 100%; }
+  .tribunas div img {
+    display: none; } }
+
+@media screen and (min-width: 630px) {
+  .historia img {
+    width: 100%; }
+  .nacimiento div img {
+    width: 100%; }
+  .historia p {
+    width: 100%; } }
+
+@media screen and (max-width: 1000px) {
+  .plantel .arqueros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .plantel .defensores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .plantel .mediocampistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .plantel .delanteros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 615px) {
+  .plantel .arqueros {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .plantel .defensores {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .plantel .mediocampistas {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .plantel .delanteros {
+    display: grid;
+    grid-template-columns: 1fr; } }

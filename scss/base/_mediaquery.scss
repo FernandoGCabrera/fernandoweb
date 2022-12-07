@@ -1,0 +1,201 @@
+//**MQ FOOTER**//
+
+@media screen and (max-width: 845px) {
+  header div nav ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  header {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  header div h1 {
+    margin-top: 50px;
+  }
+  .hero {
+    display: none;
+  }
+}
+
+//**MQ MAIN**//
+
+@media screen and(max-width:1000px){
+  main .hero{
+    display: none;
+  }
+  main .carousel{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  main .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  main .noticias {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  main .noticias .flex-noticias h2{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  main .noticias .flex-noticias1 img {
+    width: 300px;
+    height: 300px;
+  }
+  main .noticias .flex-noticias2 img {
+    width: 300px;
+    height: 300px;
+  }
+  main .noticias .flex-noticias3 img {
+    width: 300px;
+    height: 300px;
+  }
+  main .noticias .flex-noticias4 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+//**MQ FOOTER**//
+
+@media screen and (max-width: 1000px) {
+  .contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+  }
+  footer .contenedor-padre ul li a {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+  footer .contenedor-padre .redessociales {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contenedor-padre {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .contenedor-padre ul li a {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer .contenedor-padre .redessociales {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .contenedor-padre .redessociales img{
+    width: 70px;
+    height: 80px;
+}
+}
+
+//**MQ HISTORIA**//
+
+@media screen and (max-width: 1420px) {
+  .tribunas div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tribunas img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .historia img {
+    width: 100%;
+  }
+  .nacimiento div img {
+    width: 100%;
+  }
+
+  .historia p {
+    width: 100%;
+  }
+  .tribunas div img{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .historia img {
+    width: 100%;
+  }
+  .nacimiento div img {
+    width: 100%;
+  }
+
+  .historia p {
+    width: 100%;
+  }
+}
+
+//**MQ PLANTEL**//
+
+@media screen and (max-width: 1000px) {
+  .plantel .arqueros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plantel .defensores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plantel .mediocampistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plantel .delanteros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .plantel .arqueros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .plantel .defensores {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .plantel .mediocampistas {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .plantel .delanteros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+//**MAIN PRODUCTOS**//
