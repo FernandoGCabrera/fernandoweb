@@ -165,14 +165,6 @@ main .noticias {
     .plantel .jugador:hover {
       transform: rotateY(180deg); }
 
-.productos2 h2 {
-  background-color: green;
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique; }
-
 .productos2 .productos {
   display: flex;
   justify-content: space-around;
@@ -405,3 +397,35 @@ footer {
   .plantel .delanteros {
     display: grid;
     grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 600px) {
+  .productos2 .productos img {
+    width: 300px;
+    height: 400px; } }
+
+@media screen and (max-width: 350px) {
+  .productos2 .productos img {
+    width: 200px;
+    height: 300px; } }
+
+@media screen and (max-width: 1100px) {
+  main {
+    display: flex;
+    flex-direction: column; }
+    main .contacto {
+      display: flex;
+      flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .contacto .datos div {
+    display: flex;
+    flex-direction: column; }
+    .contacto .datos div h2 {
+      font-size: 1px; }
+    .contacto .datos div input {
+      font-size: 20px;
+      max-inline-size: 270px; }
+    .contacto .datos div textarea {
+      max-inline-size: 270px; }
+  .contacto .datos .pais {
+    max-inline-size: 270px; } }
