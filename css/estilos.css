@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box; }
 
+.titulo-pagina {
+  color: orange;
+  background-color: green;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 header {
   border: 3px solid #3aad36;
   background-color: orange;
@@ -67,6 +78,7 @@ main .hero {
   background-attachment: fixed;
   color: orange;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -76,17 +88,6 @@ main .hero {
 main .carousel div img {
   width: 100%;
   height: 1000px; }
-
-main h1 {
-  color: orange;
-  background-color: green;
-  font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-style: oblique;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
 
 main .noticias {
   width: 100%;
@@ -205,20 +206,38 @@ main .noticias {
     .productos2 .productos div:hover {
       transform: scale(1.15); }
 
-.contacto {
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: normal; }
-  .contacto h2 {
+main .contacto {
+  border: 2px solid #f9792f;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  main .contacto .datos {
+    border: 2px solid orange;
+    color: green;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
     font-size: 30px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-style: normal; }
-  .contacto input {
-    font-size: 20px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-style: normal; }
-  .contacto .pais {
-    font-size: 30px; }
+    main .contacto .datos h2 {
+      font-size: 30px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-style: normal; }
+    main .contacto .datos input {
+      color: green;
+      font-size: 30px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-style: normal; }
+    main .contacto .datos .pais {
+      font-size: 30px; }
+  main .contacto .maps {
+    border: 2px solid #f9792f;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5; }
+    main .contacto .maps iframe {
+      height: 600px;
+      width: 100%; }
 
 footer {
   border: 3px solid #3aad36;

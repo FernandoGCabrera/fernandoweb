@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.titulo-pagina {
+  color: orange;
+  background-color: green;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  @include flex(flex, column, center, center);
+}

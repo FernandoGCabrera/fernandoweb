@@ -1,6 +1,9 @@
 //**listas**//
 
-$colores: rgb(81, 177, 33), rgb(249, 121, 47);
+$colores:
+ rgb(81, 177, 33),
+ rgb(249, 121, 47);
+
 
 //**MIXINS**//
 
@@ -29,5 +32,6 @@ $cajas: (
 
 %flex {
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
+  align-items: center;  
 }
