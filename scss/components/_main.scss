@@ -10,9 +10,6 @@ main {
     background-size: cover;
     background-attachment: fixed;
     color: orange;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @include flex(flex, row, center, center);
     flex-wrap: wrap;
     font-size: 30px;
